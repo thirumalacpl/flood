@@ -201,7 +201,49 @@ a.control_next {
 
 
  <div data-role="page" id="home">
-      
+            <script type="text/javascript">
+$("document").ready(function() {      
+        
+        $('.top-title').click(function(){
+                       
+          $('html, body').animate({
+            scrollTop: $(".middle").offset().top
+          }, 2000);          
+           
+                       
+         });
+        
+        $('.top-titlea').click(function(){
+                       
+          $('html, body').animate({
+            scrollTop: $(".middlea").offset().top
+          }, 2000);          
+           
+                       
+         });
+        
+        
+        $('.middle-title').click(function(){
+                       
+          $('html, body').animate({
+            scrollTop: $(".bottom").offset().top
+          }, 2000);          
+           
+                       
+         });
+        
+        
+          $('.bottom-title').click(function(){
+                       
+          $('html, body').animate({
+            scrollTop: $(".top").offset().top
+          }, 2000);          
+           
+                       
+         });
+
+});
+</script>
 
      <!--  <nd2-include data-src="examples/fragments/panel.left.html"></nd2-include> -->
 
@@ -212,7 +254,7 @@ a.control_next {
 <!--panekl-->
 <!--panel-->
 
- <div data-role="panel" id="overlayPanelajkaqahw" data-display="push" data-position="left" 
+ <div data-role="panel" id="homescroll" data-display="push" data-position="left" 
  data-dismissible="false" data-swipe-close="false"> 
 
 <!--   <div class='nd2-sidepanel-profile wow fadeInDown' style="    height: 31px !important;">
@@ -239,10 +281,10 @@ a.control_next {
 <ul data-role="listview" data-inset="true">
       
       <!-- <li class="li_bot_1" ><a href="#home" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "><span class="ww">Home</span></a></li> -->
-
-       <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li>
-      <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li>
-     <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
+      <li class="li_bot_1" ><a href="#homescroll"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right top-title" ><span class="ww">Our Impact</span></a></li> 
+       <li class="li_bot_1" id="shapprovedinuo"><a href="#homescroll" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right top-titlea"  ><span class="ww">How We Help</span></a></li>
+      <!-- <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li> -->
+      
         <li class="li_bot_1" >
         <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
         <span class="ww">On Ground </span></a></li> 
@@ -254,7 +296,7 @@ a.control_next {
 
       <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
       <!--   <a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'></a> -->
-        <a href="#overlayPanelajkaqahw" class="ui-btn-left wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  ui-btn waves-effect waves-button" data-wow-delay='0.8s' style="margin-top:-1px">
+        <a href="#homescroll" class="ui-btn-left wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  ui-btn waves-effect waves-button" data-wow-delay='0.8s' style="margin-top:-1px">
          <img src="nav.gif" alt=""  style="width:100%;"></a>
         <h1 class="wow fadeIn head_tvo_line head_height_tvo head_tvo_line_1  ui-title" data-wow-delay='0.4s' style="text-align:center;">Chennai Flood Relief </h1>
 
@@ -315,8 +357,8 @@ a.control_next {
        
       </div>
 
-
-
+<div class="middle">
+</div>
 <div style="font-weight: normal;color: #555;line-height: 1.1em;font-size: 20px;margin-left: 5%;margin-right: 5%;    text-align: justify;"><p  class="align-jus"><strong class="headcolour" >More than 90 percent of natural disaster-related deaths occur in developing countries</strong>, where poverty and lack of resources exacerbate the suffering. We work in many of these countries, preparing for disasters before they happen, and responding quickly when they do.</p></div>
 
 <div class="ui-grid-solo space">
@@ -387,6 +429,7 @@ a.control_next {
 
 <!--first tab-->
 <!--second tab-->
+
  <div class="ui-grid-solo space">
 <div><p class="dotline headcolour"><span style="font-size:15px;">
 <strong style="">OUR IMPACT</strong></span></p></div>
@@ -422,7 +465,8 @@ a.control_next {
  </div>
 
 <!--second tab-->
-
+<div class="middlea">
+</div>
 <!--THIRD tab-->
   <div class="ui-grid-solo space">
 <div><p class="dotline"><span style="font-size:15px;">
@@ -529,8 +573,8 @@ a.control_next {
       
       <li class="li_bot_1" ><a href="#home" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "><span class="ww">Home</span></a></li>
 
-       <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li>
-      <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li>
+       <!-- <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li> -->
+      <!-- <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li> -->
      <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
         <li class="li_bot_1" >
         <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
@@ -620,8 +664,8 @@ a.control_next {
       
       <li class="li_bot_1" ><a href="#home" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "><span class="ww">Home</span></a></li>
 
-       <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li>
-      <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li>
+   <!--     <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li>
+      <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li> -->
      <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
         <li class="li_bot_1" >
         <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
@@ -683,8 +727,8 @@ Please help us connect with the national news agencies such as Times Now, NDTV a
       
       <li class="li_bot_1" ><a href="#home" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "><span class="ww">Home</span></a></li>
 
-       <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li>
-      <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li>
+      <!--  <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li>
+      <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li> -->
      <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
         <li class="li_bot_1" >
         <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
@@ -766,8 +810,8 @@ Please do your bit and help our brothers and sisters who are struggling to survi
       
       <li class="li_bot_1" ><a href="#home" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "><span class="ww">Home</span></a></li>
 
-       <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li>
-      <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li>
+    <!--    <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li>
+      <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li> -->
      <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
         <li class="li_bot_1" >
         <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
@@ -846,8 +890,8 @@ College Minivan with a professional swimming rescue team will be in porur, kundr
       
       <li class="li_bot_1" ><a href="#home" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "><span class="ww">Home</span></a></li>
 
-       <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li>
-      <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li>
+      <!--  <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li>
+      <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li> -->
      <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
         <li class="li_bot_1" >
         <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
