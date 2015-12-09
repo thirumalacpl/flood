@@ -5,28 +5,28 @@
     padding: 0;
     line-height: 1.25;*/
 
-        font-size: 20px;
-     font-family: 'Roboto', sans-serif;
+   font-family: 'Open Sans', sans-serif;
     margin: .5em 0 1.5em 0;
     padding: 0;
-    font-weight: 700;
-    color: #555;
+    font-weight: 800;
+      color: #373737 !important;
+          font-size: 1.384615385em;
     
   
 }
 
 .span_2 {
-font-size: 18px;
-     font-family: 'Roboto', sans-serif;
+font-size: 20px;
+   font-family: 'Open Sans', sans-serif;
     margin: .5em 0 1.5em 0;
     padding: 0;
     font-weight: 400;
       color: #555;
 }
 .em_1 {
-	    font-size: 16px;
-	  font-family: 'Roboto', sans-serif;
-	            margin: .5em 0 1.5em 0;
+	    font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	margin: .5em 0 1.5em 0;
     padding: 0;
     line-height: 1.25;
     font-weight: normal;
@@ -103,4 +103,40 @@ font-size: 18px;
 
 .ui-panel-inner > .ui-listview {
     margin: 85px -1em !important;
+}
+
+
+/*Align*/
+
+.align-jus{
+
+       text-align: -webkit-center;
+       color: #555;
+}
+
+.dotline{
+
+    text-align:center;border-bottom: 1px dashed rgba(0, 0, 0, .2); 
+    width: 15%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+
+.clearboth{
+
+    height: 0px !important;
+}
+
+
+.space{
+
+        margin: .5em 0 1.5em 0 !important;
+}
+
+
+.headcolour{
+   font-family: 'Open Sans', sans-serif;
+    font-weight: normal !important;
+   
 }
