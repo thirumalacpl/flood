@@ -79,7 +79,7 @@ font-size: 20px;
     width: 100%;
     display: block;
     line-height: 57px;
-    font-size: 25px;
+    /*font-size: 25px;*/
     font-weight: normal;
     color: #333;
     text-indent: 33px;
@@ -146,7 +146,7 @@ font-size: 20px;
 /*collapsible slide*/
 .ui-collapsible.ui-collapsible h3 a, .ui-collapsible.ui-collapsible-collapsed.ui-collapsible h3 a:hover {
     font-weight: 500;
-    background-color: rgba(0,0,0,0.1) !important;
+    /*//background-color: rgba(0,0,0,0.1) !important;*/
 }
 .ui-collapsible.ui-collapsible-collapsed, .ui-page-theme-a .ui-body-inherit.ui-collapsible-content, .ui-collapsible.ui-collapsible-collapsed.ui-collapsible h3 a {
     background-color: transparent !important;
@@ -167,6 +167,24 @@ font-size: 20px;
 }
 .ui-collapsible.ui-collapsible h3 a, .ui-collapsible.ui-collapsible-collapsed.ui-collapsible h3 a:hover {
     font-weight: 400;
-    background-color: rgba(0,0,0,0.1) !important;
+   /* background-color: rgba(0,0,0,0.1) !important;*/
     font-size: 19px;
   }
+
+.wwr{
+  padding: 25px!important;
+}
+
+@media screen and (min-width: 480px) and (max-width: 640px) {
+.videosize{
+  width:400px;
+  height:400px;
+}
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+.videosize{
+  width:750px;
+  height:500px;
+}
+}
