@@ -264,10 +264,9 @@ $("document").ready(function() {
 <!--panel-->
 
  <div data-role="panel" id="homescroll" data-display="push" data-position="left" 
- data-dismissible="false" data-swipe-close="false"> 
+ data-dismissible="false" data-swipe-close="false" style="width:280px"> 
 
-
-
+ 
 <ul data-role="listview" data-inset="true">
       
       <!-- <li class="li_bot_1" ><a href="#home" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "><span class="ww">Home</span></a></li> -->
@@ -279,6 +278,11 @@ $("document").ready(function() {
        <li class="li_bot_1" id="shapprovedinuo"><a href="#video" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">Video</span></a></li>
       <!-- <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li> -->
 </ul>
+  <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+        <h3><a href="#homescroll"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right top-title" ><span class="ww">Our Impact</span></a><h3>
+    
+        </div>
+
   <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
           <h3>How Can We Help Us</h3>
           <ul data-role="listview" data-inset="false" data-icon="false">
@@ -774,7 +778,7 @@ $( document ).on( "pagecreate", function() {
 <!--panekl-->
 <!--panel-->
 
- <div data-role="panel" id="gallerysliderasd" data-display="push" data-position="left" 
+ <div data-role="panel" id="gallerysliderasdvideo" data-display="push" data-position="left" 
  data-dismissible="false" data-swipe-close="false"> 
 
  
@@ -796,7 +800,7 @@ $( document ).on( "pagecreate", function() {
 
       <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
       <!--   <a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'></a> -->
-        <a href="#gallerysliderasd" class="ui-btn-left wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  ui-btn waves-effect waves-button" data-wow-delay='0.8s' style="margin-top:-1px">
+        <a href="#gallerysliderasdvideo" class="ui-btn-left wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  ui-btn waves-effect waves-button" data-wow-delay='0.8s' style="margin-top:-1px">
           <img src="nav.gif" alt=""  style="width:100%;"></a>
         <h1 class="wow fadeIn head_tvo_line head_height_tvo head_tvo_line_1  ui-title" data-wow-delay='0.4s' style="text-align:center;">video</h1>
         <a href="#home" class="ui-btn-right wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  waves-effect waves-button waves-effect waves-button waves-effect waves-button  waves-effect waves-button ui-btn waves-effect waves-button" data-wow-delay="1.2s"  data-role="button" role="button" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;"><img src="images/arrow.png" alt="" class="img_sign"></a>
@@ -810,34 +814,21 @@ $( document ).on( "pagecreate", function() {
        
   <br>
   
-  <div class="ui-grid-solo">
-<video width="400" controls>
-  <source src="http://staging.eimpressive.com/AGNI/destructionphoto.mov" type="video/mp4">
-</video>
-</div>
-<br>
-  <div class="ui-grid-solo">
-<video width="400" controls>
-  <source src="http://staging.eimpressive.com/AGNI/destruction 6 photo.mov" type="video/mp4">
-</video>
-</div>
-<br>
-  <div class="ui-grid-solo">
-<video width="400" controls>
-  <source src="http://staging.eimpressive.com/AGNI/destruction 5 photo.mov" type="video/mp4">
-</video>
-</div>
+
+
 
         <div class="ui-grid-solo" style="margin:15px">
      
-<a href="#popupVideo" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Launch video player</a>
+<a href="#popupVideo" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline"><img src="http://staging.eimpressive.com/AGNI/DSCN9860.JPG" style="width:300px;height:300px"></a>
 <div data-role="popup" id="popupVideo" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
-    <iframe src="http://player.vimeo.com/video/63534746" width="497" height="298" seamless=""></iframe>
+    <iframe src="http://player.vimeo.com/video/148455800" width="497" height="298" seamless=""></iframe>
 </div>
 
        </div>
       
-   
+     <video controls autoplay width="100%">
+            <source src="http://staging.eimpressive.com/AGNI/destructionphoto2.mov" type="video/mp4" width="497" height="298" >
+        </video>
 
        </div>
                 

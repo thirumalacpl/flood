@@ -142,3 +142,31 @@ font-size: 20px;
     font-weight: normal !important;
    
 }
+
+/*collapsible slide*/
+.ui-collapsible.ui-collapsible h3 a, .ui-collapsible.ui-collapsible-collapsed.ui-collapsible h3 a:hover {
+    font-weight: 500;
+    background-color: rgba(0,0,0,0.1) !important;
+}
+.ui-collapsible.ui-collapsible-collapsed, .ui-page-theme-a .ui-body-inherit.ui-collapsible-content, .ui-collapsible.ui-collapsible-collapsed.ui-collapsible h3 a {
+    background-color: transparent !important;
+}
+.ui-collapsible-heading .ui-btn {
+    text-align: left;
+    margin: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+}
+.ui-btn, a.ui-btn {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: inherit;
+}
+.ui-collapsible {
+    margin: 0 -1em;
+}
+.ui-collapsible.ui-collapsible h3 a, .ui-collapsible.ui-collapsible-collapsed.ui-collapsible h3 a:hover {
+    font-weight: 400;
+    background-color: rgba(0,0,0,0.1) !important;
+    font-size: 19px;
+  }
