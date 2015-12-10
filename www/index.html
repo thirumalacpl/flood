@@ -221,6 +221,15 @@ $("document").ready(function() {
            
                        
          });
+
+             $('.top-titleab').click(function(){
+                       
+          $('html, body').animate({
+            scrollTop: $(".middleab").offset().top
+          }, 2000);          
+           
+                       
+         });
         
         
         $('.middle-title').click(function(){
@@ -257,39 +266,29 @@ $("document").ready(function() {
  <div data-role="panel" id="homescroll" data-display="push" data-position="left" 
  data-dismissible="false" data-swipe-close="false"> 
 
-<!--   <div class='nd2-sidepanel-profile wow fadeInDown' style="    height: 31px !important;">
-          <img class='profile-background' src="images/slide/slide-bg.png" />
-          <div class="row">
-            <div class='col-xs-12 center-xs'>
-              <div class='box box1'>
-                <img class="profile-thumbnail" src="images/slide/profile.png"  />
-             </div>
-            </div>
-             </div>
-              <div class="row" style="margin-top:5px">
-            <div class='col-xs-12 center-xs'>
-              <div class='box profile-text box1'>
-                   <strong id="userlist"></strong>
-             
-              
-          </div>
-        </div>
-        </div>
 
-            </div> -->
 
 <ul data-role="listview" data-inset="true">
       
       <!-- <li class="li_bot_1" ><a href="#home" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "><span class="ww">Home</span></a></li> -->
       <li class="li_bot_1" ><a href="#homescroll"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right top-title" ><span class="ww">Our Impact</span></a></li> 
-       <li class="li_bot_1" id="shapprovedinuo"><a href="#homescroll" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right top-titlea"  ><span class="ww">How We Help</span></a></li>
-      <!-- <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li> -->
-      
-        <li class="li_bot_1" >
+      <li class="li_bot_1" >
         <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
-        <span class="ww">On Ground </span></a></li> 
- 
+        <span class="ww">On The Ground </span></a></li> 
+       <li class="li_bot_1" id="shapprovedinuo"><a href="#homescroll" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right top-titleab"  ><span class="ww">Contact Us</span></a></li>
+       <li class="li_bot_1" id="shapprovedinuo"><a href="#video" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">Video</span></a></li>
+      <!-- <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li> -->
 </ul>
+  <div data-role="collapsible" data-inset="false"  data-collapsed-icon="carat-d" data-expanded-icon="carat-d" data-iconpos="right">
+          <h3>How Can We Help Us</h3>
+          <ul data-role="listview" data-inset="false" data-icon="false">
+            <li><a href="#donate" data-ajax='false' data-icon="false">Donate</a></li>
+            <li><a href="#Volunteer" data-ajax='false' data-icon="false">Became Volunteer</a></li>
+            <li><a href="#Gift" data-ajax='false'>Gift</a></li>
+            <li><a href="#state" data-ajax='false' data-icon="false">State Your Needs</a></li>
+            
+          </ul>
+        </div>
    
 </div> 
 
@@ -437,16 +436,16 @@ $("document").ready(function() {
 
 
 <p align="center">
-<img alt="" src="icon2.png" style="width: 327px; height: 92px;"><br>
+<img alt="" src="money.png" style="width: 327px; height: 92px;"><br>
 <br>
 <strong class="headcolour" style="    font-size: 40px;
-    margin: 3% !important;">250</strong>
+    margin: 3% !important;">1crore</strong>
 <span style="font-size:50px;">
 <div class="clearboth" style="clear:both">&nbsp;</div></span><br>
 <div class="ui-grid-a">
   <div class="ui-block-a width_1"></div>
   <div class="ui-block-b width_2">
-<span class="span_1 headcolour">INR 61,00,000 worth supplies that were donated entirely by the generous and kind hearted samatarians from all over the country has been distributed to affected areas</span>
+<span class="span_1 headcolour">INR 1crore worth supplies that were donated entirely by the generous and kind hearted samatarians from all over the country has been distributed to affected areas</span>
  </div>
  <div class="ui-block-c width_3"></div>
 
@@ -490,36 +489,35 @@ $("document").ready(function() {
 
 </div>
 <BR>
-<div style="text-align:center"><span style="font-size: 20px;text-decoration:underline">DAY WISE SUPPORT</span></div>
+<div style="text-align:center"><a href="#daywise"><span style="font-size: 20px;text-decoration:underline">CLICK ON TO VIEW DAY WISE SUPPORT</span></a></div>
 <div class="ui-grid-a" style="margin:20px">
 
-<br>
-<ul data-role="listview">
+
+<!-- <ul data-role="listview">
       <li style="background-color: #81B92C;padding-left:15px;padding-right:15px;color:#fff"><a href="#dec3">Dec 3</a></li>
       <br>
       <li style="background-color: #81B92C;padding-left:15px;padding-right:15px;color:#fff"><a href="#dec4">Dec 4</a></li>
       <br>
       <li style="background-color: #81B92C;padding-left:15px;padding-right:15px;color:#fff"><a href="#dec6">Dec 6</a></li>
       <br>
-      <!-- <li style="background-color: #2C2C2B;"><a href="#dec6">Dec 6</a></li> -->
+   
       <li style="background-color: #81B92C;padding-left:15px;padding-right:15px;color:#fff"><a href="#dec7">Dec 7</a></li>
 
- </ul>
-
+ </ul> -->
 </div>
-
  </div>
-
+<div class="middleab">
+</div>
 <!--THIRD tab-->
 <div class="ui-grid-solo">
  
 <div class="ui-grid-a">
     <div class="ui-block-a width_1_11"></div>
     <div class="ui-block-b width_2_11">
-   <!--    <p class="p_foot">Contact Us</p>
+      <p class="p_foot" style="text-decoration:underline">Contact Us</p>
       <p>1.800.509.9716</p>
       <p>World Vision</p>
-      <p>P.O. Box 9716</p> -->
+      <p>P.O. Box 9716</p>
 
     </div>
     <div class="ui-block-c width_3_11"></div>
@@ -578,7 +576,7 @@ $("document").ready(function() {
      <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
         <li class="li_bot_1" >
         <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
-        <span class="ww">On Ground </span></a></li> 
+        <span class="ww">On The Ground </span></a></li> 
  
 </ul>
    
@@ -589,7 +587,7 @@ $("document").ready(function() {
       <!--   <a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'></a> -->
         <a href="#galleryslider" class="ui-btn-left wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  ui-btn waves-effect waves-button" data-wow-delay='0.8s' style="margin-top:-1px">
           <img src="nav.gif" alt=""  style="width:100%;"></a>
-        <h1 class="wow fadeIn head_tvo_line head_height_tvo head_tvo_line_1  ui-title" data-wow-delay='0.4s' style="text-align:center;">On Ground </h1>
+        <h1 class="wow fadeIn head_tvo_line head_height_tvo head_tvo_line_1  ui-title" data-wow-delay='0.4s' style="text-align:center;">On The Ground </h1>
 
       </div>
          <div role="main" class="ui-content li_main_bg" data-inset="false">
@@ -644,6 +642,451 @@ $("document").ready(function() {
 				        
         </div>
 
+<div data-role="page" id="daywise">
+      
+
+     <!--  <nd2-include data-src="examples/fragments/panel.left.html"></nd2-include> -->
+
+      <div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+     <!--    <nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include> -->
+      </div>
+
+<!--panekl-->
+<!--panel-->
+
+ <div data-role="panel" id="gallerysliderasd" data-display="push" data-position="left" 
+ data-dismissible="false" data-swipe-close="false"> 
+
+ 
+<ul data-role="listview" data-inset="true">
+      
+      <li class="li_bot_1" ><a href="#home" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "><span class="ww">Home</span></a></li>
+
+   <!--     <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li>
+      <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li> -->
+     <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
+        <li class="li_bot_1" >
+        <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
+        <span class="ww">On The Ground </span></a></li> 
+ 
+</ul>
+   
+</div> 
+
+
+      <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+      <!--   <a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'></a> -->
+        <a href="#gallerysliderasd" class="ui-btn-left wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  ui-btn waves-effect waves-button" data-wow-delay='0.8s' style="margin-top:-1px">
+          <img src="nav.gif" alt=""  style="width:100%;"></a>
+        <h1 class="wow fadeIn head_tvo_line head_height_tvo head_tvo_line_1  ui-title" data-wow-delay='0.4s' style="text-align:center;">DAY WISE SUPPORT</h1>
+        <a href="#home" class="ui-btn-right wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  waves-effect waves-button waves-effect waves-button waves-effect waves-button  waves-effect waves-button ui-btn waves-effect waves-button" data-wow-delay="1.2s"  data-role="button" role="button" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;"><img src="images/arrow.png" alt="" class="img_sign"></a>
+
+      </div>
+         <div role="main" class="ui-content li_main_bg" data-inset="false">
+       <div class="ui-grid-solo">
+     
+       <!--  <img src="new/10.jpg" class="img_new1"> -->
+       </div>
+       
+  <br>
+        <div class="ui-grid-solo" style="margin:15px">
+     
+<ul data-role="listview">
+      <li style="background-color: #81B92C;padding-left:15px;padding-right:15px;color:#fff"><a href="#dec3">Dec 3</a></li>
+      <br>
+      <li style="background-color: #81B92C;padding-left:15px;padding-right:15px;color:#fff"><a href="#dec4">Dec 4</a></li>
+      <br>
+      <li style="background-color: #81B92C;padding-left:15px;padding-right:15px;color:#fff"><a href="#dec6">Dec 6</a></li>
+      <br>
+      <!-- <li style="background-color: #2C2C2B;"><a href="#dec6">Dec 6</a></li> -->
+      <li style="background-color: #81B92C;padding-left:15px;padding-right:15px;color:#fff"><a href="#dec7">Dec 7</a></li>
+
+ </ul>
+       </div>
+      
+   
+
+       </div>
+                
+        </div>
+
+<div data-role="page" id="video">
+      <script type="text/javascript">
+
+// popup examples
+$( document ).on( "pagecreate", function() {
+    // The window width and height are decreased by 30 to take the tolerance of 15 pixels at each side into account
+    function scale( width, height, padding, border ) {
+        var scrWidth = $( window ).width() - 30,
+            scrHeight = $( window ).height() - 30,
+            ifrPadding = 2 * padding,
+            ifrBorder = 2 * border,
+            ifrWidth = width + ifrPadding + ifrBorder,
+            ifrHeight = height + ifrPadding + ifrBorder,
+            h, w;
+        if ( ifrWidth < scrWidth && ifrHeight < scrHeight ) {
+            w = ifrWidth;
+            h = ifrHeight;
+        } else if ( ( ifrWidth / scrWidth ) > ( ifrHeight / scrHeight ) ) {
+            w = scrWidth;
+            h = ( scrWidth / ifrWidth ) * ifrHeight;
+        } else {
+            h = scrHeight;
+            w = ( scrHeight / ifrHeight ) * ifrWidth;
+        }
+        return {
+            'width': w - ( ifrPadding + ifrBorder ),
+            'height': h - ( ifrPadding + ifrBorder )
+        };
+    };
+    $( ".ui-popup iframe" )
+        .attr( "width", 0 )
+        .attr( "height", "auto" );
+    $( "#popupVideo" ).on({
+        popupbeforeposition: function() {
+            // call our custom function scale() to get the width and height
+            var size = scale( 497, 298, 15, 1 ),
+                w = size.width,
+                h = size.height;
+            $( "#popupVideo iframe" )
+                .attr( "width", w )
+                .attr( "height", h );
+        },
+        popupafterclose: function() {
+            $( "#popupVideo iframe" )
+                .attr( "width", 0 )
+                .attr( "height", 0 );
+        }
+    });
+});
+      </script>
+<style type="text/css">
+  iframe {
+    border: none;
+}
+</style>
+     <!--  <nd2-include data-src="examples/fragments/panel.left.html"></nd2-include> -->
+
+      <div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+     <!--    <nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include> -->
+      </div>
+
+<!--panekl-->
+<!--panel-->
+
+ <div data-role="panel" id="gallerysliderasd" data-display="push" data-position="left" 
+ data-dismissible="false" data-swipe-close="false"> 
+
+ 
+<ul data-role="listview" data-inset="true">
+      
+      <li class="li_bot_1" ><a href="#home" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "><span class="ww">Home</span></a></li>
+
+   <!--     <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li>
+      <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li> -->
+     <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
+        <li class="li_bot_1" >
+        <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
+        <span class="ww">On The Ground </span></a></li> 
+ 
+</ul>
+   
+</div> 
+
+
+      <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+      <!--   <a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'></a> -->
+        <a href="#gallerysliderasd" class="ui-btn-left wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  ui-btn waves-effect waves-button" data-wow-delay='0.8s' style="margin-top:-1px">
+          <img src="nav.gif" alt=""  style="width:100%;"></a>
+        <h1 class="wow fadeIn head_tvo_line head_height_tvo head_tvo_line_1  ui-title" data-wow-delay='0.4s' style="text-align:center;">video</h1>
+        <a href="#home" class="ui-btn-right wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  waves-effect waves-button waves-effect waves-button waves-effect waves-button  waves-effect waves-button ui-btn waves-effect waves-button" data-wow-delay="1.2s"  data-role="button" role="button" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;"><img src="images/arrow.png" alt="" class="img_sign"></a>
+
+      </div>
+         <div role="main" class="ui-content li_main_bg" data-inset="false">
+       <div class="ui-grid-solo">
+     
+       <!--  <img src="new/10.jpg" class="img_new1"> -->
+       </div>
+       
+  <br>
+  
+  <div class="ui-grid-solo">
+<video width="400" controls>
+  <source src="http://staging.eimpressive.com/AGNI/destructionphoto.mov" type="video/mp4">
+</video>
+</div>
+<br>
+  <div class="ui-grid-solo">
+<video width="400" controls>
+  <source src="http://staging.eimpressive.com/AGNI/destruction 6 photo.mov" type="video/mp4">
+</video>
+</div>
+<br>
+  <div class="ui-grid-solo">
+<video width="400" controls>
+  <source src="http://staging.eimpressive.com/AGNI/destruction 5 photo.mov" type="video/mp4">
+</video>
+</div>
+
+        <div class="ui-grid-solo" style="margin:15px">
+     
+<a href="#popupVideo" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Launch video player</a>
+<div data-role="popup" id="popupVideo" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
+    <iframe src="http://player.vimeo.com/video/63534746" width="497" height="298" seamless=""></iframe>
+</div>
+
+       </div>
+      
+   
+
+       </div>
+                
+        </div>
+
+
+<div data-role="page" id="donate">
+      
+
+     <!--  <nd2-include data-src="examples/fragments/panel.left.html"></nd2-include> -->
+
+      <div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+     <!--    <nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include> -->
+      </div>
+
+<!--panekl-->
+<!--panel-->
+
+ <div data-role="panel" id="donateslider" data-display="push" data-position="left" 
+ data-dismissible="false" data-swipe-close="false"> 
+
+ 
+<ul data-role="listview" data-inset="true">
+      
+      <li class="li_bot_1" ><a href="#home" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "><span class="ww">Home</span></a></li>
+
+   <!--     <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li>
+      <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li> -->
+     <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
+        <li class="li_bot_1" >
+        <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
+        <span class="ww">On The Ground </span></a></li> 
+ 
+</ul>
+   
+</div> 
+
+
+      <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+      <!--   <a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'></a> -->
+        <a href="#donateslider" class="ui-btn-left wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  ui-btn waves-effect waves-button" data-wow-delay='0.8s' style="margin-top:-1px">
+          <img src="nav.gif" alt=""  style="width:100%;"></a>
+        <h1 class="wow fadeIn head_tvo_line head_height_tvo head_tvo_line_1  ui-title" data-wow-delay='0.4s' style="text-align:center;">Donate </h1>
+        <a href="#home" class="ui-btn-right wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  waves-effect waves-button waves-effect waves-button waves-effect waves-button  waves-effect waves-button ui-btn waves-effect waves-button" data-wow-delay="1.2s"  data-role="button" role="button" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;"><img src="images/arrow.png" alt="" class="img_sign"></a>
+
+      </div>
+         <div role="main" class="ui-content li_main_bg" data-inset="false">
+       <div class="ui-grid-solo">
+     
+        <img src="new/10.jpg" class="img_new1">
+       </div>
+       
+  <br>
+        <div class="ui-grid-solo" style="margin:15px">
+     
+      <P>Firstly, please forgive me If my team of volunteers or myself haven't been able to rescue or reach relief supplies to you or the ones who you had personally requested. It was a very hectic day of service with very poor network facilities.
+13220 food packets were distributed today by the service minded and passionate youth volunteers at the Agni Foundations. 184 families have been evacuated across 40 different locations. Credits to several donors who provided the meals.
+The rains have subsided for now, but the situation is very criticial in Kotturpuram, alwarpet, thambaram, nandhanam, velachery, saidapet, Anna Nagar.Many areas are bad but improving. Several lakes and rivers are overflowing. The water is flowing back into the streets as the the drain system are clogged.
+250 Foundations volunteers and myself have been working tirelessly day and night to help those who are severly affected. We are not only providing food but also places to stay across chennai. Many of the places are inaccessible and dangerous. We haven't been able to rescue all those who requested but we are still trying our best. Tommorow we will be renting a couple of boats to reach relief supplies to the affected. Hopefully, that will enable us to optimise our operations.
+Network has been down and internet is very hard to access. Many roads are inaccessible and dangerous. We haven't been able to rescue all those who requested but we are still trying our best. Right now I would sincerely request all of you to stay indoors. Please stock rations and use water very conservatively.
+Please help us connect with the national news agencies such as Times Now, NDTV and CNN-IBN to help streamline our rescue and relief operations in the coming days. We have volunteers across the city who can not only offer food but also a place to stay.</P>
+       </div>
+      
+   
+
+       </div>
+                
+        </div>
+
+<div data-role="page" id="Volunteer">
+      
+
+     <!--  <nd2-include data-src="examples/fragments/panel.left.html"></nd2-include> -->
+
+      <div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+     <!--    <nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include> -->
+      </div>
+
+<!--panekl-->
+<!--panel-->
+
+ <div data-role="panel" id="Volunteerslider" data-display="push" data-position="left" 
+ data-dismissible="false" data-swipe-close="false"> 
+
+ 
+<ul data-role="listview" data-inset="true">
+      
+      <li class="li_bot_1" ><a href="#home" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "><span class="ww">Home</span></a></li>
+
+   <!--     <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li>
+      <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li> -->
+     <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
+        <li class="li_bot_1" >
+        <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
+        <span class="ww">On The Ground </span></a></li> 
+ 
+</ul>
+   
+</div> 
+
+
+      <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+      <!--   <a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'></a> -->
+        <a href="#Volunteerslider" class="ui-btn-left wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  ui-btn waves-effect waves-button" data-wow-delay='0.8s' style="margin-top:-1px">
+          <img src="nav.gif" alt=""  style="width:100%;"></a>
+        <h1 class="wow fadeIn head_tvo_line head_height_tvo head_tvo_line_1  ui-title" data-wow-delay='0.4s' style="text-align:center;">Volunteer </h1>
+        <a href="#home" class="ui-btn-right wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  waves-effect waves-button waves-effect waves-button waves-effect waves-button  waves-effect waves-button ui-btn waves-effect waves-button" data-wow-delay="1.2s"  data-role="button" role="button" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;"><img src="images/arrow.png" alt="" class="img_sign"></a>
+
+      </div>
+         <div role="main" class="ui-content li_main_bg" data-inset="false">
+       <div class="ui-grid-solo">
+     
+        <img src="new/10.jpg" class="img_new1">
+       </div>
+       
+  <br>
+        <div class="ui-grid-solo" style="margin:15px">
+     
+      <P>Firstly, please forgive me If my team of volunteers or myself haven't been able to rescue or reach relief supplies to you or the ones who you had personally requested. It was a very hectic day of service with very poor network facilities.
+13220 food packets were distributed today by the service minded and passionate youth volunteers at the Agni Foundations. 184 families have been evacuated across 40 different locations. Credits to several donors who provided the meals.
+The rains have subsided for now, but the situation is very criticial in Kotturpuram, alwarpet, thambaram, nandhanam, velachery, saidapet, Anna Nagar.Many areas are bad but improving. Several lakes and rivers are overflowing. The water is flowing back into the streets as the the drain system are clogged.
+250 Foundations volunteers and myself have been working tirelessly day and night to help those who are severly affected. We are not only providing food but also places to stay across chennai. Many of the places are inaccessible and dangerous. We haven't been able to rescue all those who requested but we are still trying our best. Tommorow we will be renting a couple of boats to reach relief supplies to the affected. Hopefully, that will enable us to optimise our operations.
+Network has been down and internet is very hard to access. Many roads are inaccessible and dangerous. We haven't been able to rescue all those who requested but we are still trying our best. Right now I would sincerely request all of you to stay indoors. Please stock rations and use water very conservatively.
+Please help us connect with the national news agencies such as Times Now, NDTV and CNN-IBN to help streamline our rescue and relief operations in the coming days. We have volunteers across the city who can not only offer food but also a place to stay.</P>
+       </div>
+      
+   
+
+       </div>
+                
+        </div>
+
+<div data-role="page" id="Gift">
+      
+
+     <!--  <nd2-include data-src="examples/fragments/panel.left.html"></nd2-include> -->
+
+      <div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+     <!--    <nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include> -->
+      </div>
+
+<!--panekl-->
+<!--panel-->
+
+ <div data-role="panel" id="Volunteerslider" data-display="push" data-position="left" 
+ data-dismissible="false" data-swipe-close="false"> 
+
+ 
+<ul data-role="listview" data-inset="true">
+      
+      <li class="li_bot_1" ><a href="#home" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "><span class="ww">Home</span></a></li>
+
+   <!--     <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li>
+      <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li> -->
+     <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
+        <li class="li_bot_1" >
+        <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
+        <span class="ww">On The Ground </span></a></li> 
+ 
+</ul>
+   
+</div> 
+
+
+      <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+      <!--   <a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'></a> -->
+        <a href="#Volunteerslider" class="ui-btn-left wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  ui-btn waves-effect waves-button" data-wow-delay='0.8s' style="margin-top:-1px">
+          <img src="nav.gif" alt=""  style="width:100%;"></a>
+        <h1 class="wow fadeIn head_tvo_line head_height_tvo head_tvo_line_1  ui-title" data-wow-delay='0.4s' style="text-align:center;">Gift </h1>
+        <a href="#home" class="ui-btn-right wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  waves-effect waves-button waves-effect waves-button waves-effect waves-button  waves-effect waves-button ui-btn waves-effect waves-button" data-wow-delay="1.2s"  data-role="button" role="button" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;"><img src="images/arrow.png" alt="" class="img_sign"></a>
+
+      </div>
+         <div role="main" class="ui-content li_main_bg" data-inset="false">
+       <div class="ui-grid-solo">
+     
+        <img src="new/10.jpg" class="img_new1">
+       </div>
+       
+  <br>
+        <div class="ui-grid-solo" style="margin:15px">
+     
+      <P>gift</P>
+       </div>
+      
+   
+
+       </div>
+                
+        </div>
+
+
+<div data-role="page" id="state">
+      
+
+     <!--  <nd2-include data-src="examples/fragments/panel.left.html"></nd2-include> -->
+
+      <div data-role="panel" id="bottomsheet" data-animate="false" data-position='bottom' data-display="overlay">
+     <!--    <nd2-include data-src="examples/fragments/bottom.sheet.html"></nd2-include> -->
+      </div>
+
+<!--panekl-->
+<!--panel-->
+
+ <div data-role="panel" id="Volunteerslider" data-display="push" data-position="left" 
+ data-dismissible="false" data-swipe-close="false"> 
+
+ 
+<ul data-role="listview" data-inset="true">
+      
+      <li class="li_bot_1" ><a href="#home" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "><span class="ww">Home</span></a></li>
+
+   <!--     <li class="li_bot_1" id="shapprovedinuo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">How We Help</span></a></li>
+      <li class="li_bot_1" id="completedshioo"><a href="#" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right "  ><span class="ww">About Us</span></a></li> -->
+     <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
+        <li class="li_bot_1" >
+        <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
+        <span class="ww">On The Ground </span></a></li> 
+ 
+</ul>
+   
+</div> 
+
+
+      <div data-role="header" data-position="fixed" class="wow fadeInDown" data-wow-delay="0.2s">
+      <!--   <a href="#bottomsheet" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'></a> -->
+        <a href="#Volunteerslider" class="ui-btn-left wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  ui-btn waves-effect waves-button" data-wow-delay='0.8s' style="margin-top:-1px">
+          <img src="nav.gif" alt=""  style="width:100%;"></a>
+        <h1 class="wow fadeIn head_tvo_line head_height_tvo head_tvo_line_1  ui-title" data-wow-delay='0.4s' style="text-align:center;">State Your Needs</h1>
+        <a href="#home" class="ui-btn-right wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  waves-effect waves-button waves-effect waves-button waves-effect waves-button  waves-effect waves-button ui-btn waves-effect waves-button" data-wow-delay="1.2s"  data-role="button" role="button" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;"><img src="images/arrow.png" alt="" class="img_sign"></a>
+
+      </div>
+         <div role="main" class="ui-content li_main_bg" data-inset="false">
+       <div class="ui-grid-solo">
+     
+        <img src="new/10.jpg" class="img_new1">
+       </div>
+       
+  <br>
+        <div class="ui-grid-solo" style="margin:15px">
+     
+      <P>state</P>
+       </div>
+      
+   
+
+       </div>
+                
+        </div>
+
 <div data-role="page" id="dec3">
       
 
@@ -669,7 +1112,7 @@ $("document").ready(function() {
      <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
         <li class="li_bot_1" >
         <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
-        <span class="ww">On Ground </span></a></li> 
+        <span class="ww">On The Ground </span></a></li> 
  
 </ul>
    
@@ -732,7 +1175,7 @@ Please help us connect with the national news agencies such as Times Now, NDTV a
      <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
         <li class="li_bot_1" >
         <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
-        <span class="ww">On Ground </span></a></li> 
+        <span class="ww">On The Ground </span></a></li> 
  
 </ul>
    
@@ -744,7 +1187,7 @@ Please help us connect with the national news agencies such as Times Now, NDTV a
         <a href="#galleryslider4" class="ui-btn-left wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  ui-btn waves-effect waves-button" data-wow-delay='0.8s' style="margin-top:-1px">
           <img src="nav.gif" alt=""  style="width:100%;"></a>
         <h1 class="wow fadeIn head_tvo_line head_height_tvo head_tvo_line_1  ui-title" data-wow-delay='0.4s' style="text-align:center;">DECEMBER 4 </h1>
-         <a href="#home" class="ui-btn-right wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  waves-effect waves-button waves-effect waves-button waves-effect waves-button  waves-effect waves-button ui-btn waves-effect waves-button" data-wow-delay="1.2s"  data-role="button" role="button" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;"><img src="images/arrow.png" alt="" class="img_sign"></a>
+         <a href="#daywise" class="ui-btn-right wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  waves-effect waves-button waves-effect waves-button waves-effect waves-button  waves-effect waves-button ui-btn waves-effect waves-button" data-wow-delay="1.2s"  data-role="button" role="button" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;"><img src="images/arrow.png" alt="" class="img_sign"></a>
       </div>
          <div role="main" class="ui-content li_main_bg" data-inset="false">
        <div class="ui-grid-solo">
@@ -815,7 +1258,7 @@ Please do your bit and help our brothers and sisters who are struggling to survi
      <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
         <li class="li_bot_1" >
         <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
-        <span class="ww">On Ground </span></a></li> 
+        <span class="ww">On The Ground </span></a></li> 
  
 </ul>
    
@@ -827,7 +1270,7 @@ Please do your bit and help our brothers and sisters who are struggling to survi
         <a href="#galleryslider6" class="ui-btn-left wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  ui-btn waves-effect waves-button" data-wow-delay='0.8s' style="margin-top:-1px">
           <img src="nav.gif" alt=""  style="width:100%;"></a>
         <h1 class="wow fadeIn head_tvo_line head_height_tvo head_tvo_line_1  ui-title" data-wow-delay='0.4s' style="text-align:center;">DECEMBER 6 </h1>
-         <a href="#home" class="ui-btn-right wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  waves-effect waves-button waves-effect waves-button waves-effect waves-button  waves-effect waves-button ui-btn waves-effect waves-button" data-wow-delay="1.2s"  data-role="button" role="button" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;"><img src="images/arrow.png" alt="" class="img_sign"></a>
+         <a href="#daywise" class="ui-btn-right wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  waves-effect waves-button waves-effect waves-button waves-effect waves-button  waves-effect waves-button ui-btn waves-effect waves-button" data-wow-delay="1.2s"  data-role="button" role="button" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;"><img src="images/arrow.png" alt="" class="img_sign"></a>
 
       </div>
          <div role="main" class="ui-content li_main_bg" data-inset="false">
@@ -895,7 +1338,7 @@ College Minivan with a professional swimming rescue team will be in porur, kundr
      <!--  <li class="li_bot_1" id="rejectieiop"><a href="#"  id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " ><span class="ww">My World Vision</span></a></li>  -->
         <li class="li_bot_1" >
         <a href="#gallery" id="global-nav" class="ui-btn ui-icon-carat-r ui-btn-icon-right " >
-        <span class="ww">On Ground </span></a></li> 
+        <span class="ww">On The Ground </span></a></li> 
  
 </ul>
    
@@ -907,7 +1350,7 @@ College Minivan with a professional swimming rescue team will be in porur, kundr
         <a href="#galleryslider" class="ui-btn-left wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  ui-btn waves-effect waves-button" data-wow-delay='0.8s' style="margin-top:-1px">
           <img src="nav.gif" alt=""  style="width:100%;"></a>
         <h1 class="wow fadeIn head_tvo_line head_height_tvo head_tvo_line_1  ui-title" data-wow-delay='0.4s' style="text-align:center;">DECEMBER 7 </h1>
-         <a href="#home" class="ui-btn-right wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  waves-effect waves-button waves-effect waves-button waves-effect waves-button  waves-effect waves-button ui-btn waves-effect waves-button" data-wow-delay="1.2s"  data-role="button" role="button" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;"><img src="images/arrow.png" alt="" class="img_sign"></a>
+         <a href="#daywise" class="ui-btn-right wow fadeIn head_tvo_line head_height_tvo waves-effect waves-button  waves-effect waves-button waves-effect waves-button waves-effect waves-button  waves-effect waves-button ui-btn waves-effect waves-button" data-wow-delay="1.2s"  data-role="button" role="button" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;"><img src="images/arrow.png" alt="" class="img_sign"></a>
 
       </div>
          <div role="main" class="ui-content li_main_bg" data-inset="false">

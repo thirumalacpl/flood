@@ -102,7 +102,9 @@ font-size: 20px;
 }
 
 .ui-panel-inner > .ui-listview {
-    margin: 85px -1em !important;
+/*    margin: 85px -1em !important;*/
+ margin-top: 85px;
+
 }
 
 
